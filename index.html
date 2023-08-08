@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work from Home</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" /> 
+</head>
+<body>
+    <div class="header">
+        <h1><header>Work from Home</header></h1>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="left-div">
+            <div class="computation">
+            <h1>Simple Calculator</h1>
+            <input type="text" id="value1" placeholder="Enter Value"/><br><br>
+            <input type="text" id="value2" placeholder="Enter Value"/><br><br>
+
+            <input type="radio" name="operator" value="add">
+            <label for="Addition">Addition (+)</label>
+            <input type="radio" name="operator" value="sub">
+            <label for="Subtraction">Subtraction (-)</label>
+            <input type="radio" name="operator" value="mul">
+            <label for="Multiplication">Multiplication (*)</label>
+            <input type="radio" name="operator" value="div">
+            <label for="Division">Division (/)</label><br><br>
+
+            <label for="Sum">The Computation is : <h1 id="Total"> SUM </h1></label>
+            <input type="submit" id="computes" class="computes" value="Calculate"/><br><br>
+            </div>
+        </div>
+
+        <div class="right-div">
+            <div class="calculator">
+                <h1>Simple Calculator</h1>
+                <input type="text" id="result" placeholder="0">
+                <div class="buttons">
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="number">0</button>
+                    <button class="operator">+</button>
+                    <button class="operator">-</button>
+                    <button class="operator">*</button>
+                    <button class="operator">/</button>
+                    <button id="clear">C</button>
+                    <button id="equals">=</button>
+                </div>
+        </div>
+    </div>
+     
+    <script src="javascript/calculate.js"></script>
+</body>
+</html>
