@@ -11,13 +11,16 @@
         <h1><header>Work from Home</header></h1>
     </div>
     <br><br>
-    <div class="container">
+<div>
+    <div class="header-days">
+        <div class="day1"> <h1>Day 1</h1> </div>
+    </div>
+    <div class="container1">
         <div class="left-div">
             <div class="computation">
             <h1>Simple Calculator</h1>
             <input type="text" id="value1" placeholder="Enter Value"/><br><br>
             <input type="text" id="value2" placeholder="Enter Value"/><br><br>
-
             <input type="radio" name="operator" value="add">
             <label for="Addition">Addition (+)</label>
             <input type="radio" name="operator" value="sub">
@@ -26,12 +29,10 @@
             <label for="Multiplication">Multiplication (*)</label>
             <input type="radio" name="operator" value="div">
             <label for="Division">Division (/)</label><br><br>
-
             <label for="Sum">The Computation is : <h1 id="Total"> SUM </h1></label>
             <input type="submit" id="computes" class="computes" value="Calculate"/><br><br>
             </div>
         </div>
-
         <div class="right-div">
             <div class="calculator">
                 <h1>Simple Calculator</h1>
@@ -56,7 +57,82 @@
                 </div>
         </div>
     </div>
-     
+</div>
+    <br><br>
+<div>
+    <div class="header-days">
+        <div class="day2"> <h1>Day 2</h1> </div>
+    </div>
+    <div class="container2">    
+        <div class="center-div">
+            <h1>Create a simple quiz game!</h1>
+            <div id="questions">
+                <div>
+                    <h2>1.) What is the national flower of the Philippines? </h2>
+                    <h3>
+                        <input type="radio" id="Rafflesia" name="Q1" value="0">
+                        <label for="Rafflesia">Rafflesia</label>
+                        <input type="radio" id="Sampaguita" name="Q1" value="1">
+                        <label for="Sampaguita">Sampaguita</label>
+                        <input type="radio" id="Orchid" name="Q1" value="2">
+                        <label for="Orchid">Orchid</label>
+                        <input type="radio" id="Sunflower" name="Q1" value="3">
+                        <label for="Sunflower">Sunflower</label>
+                    </h3>
+                    <h2>2.) Which Philippine volcano is known as the "Perfect Cone"? </h2>
+                    <h3>
+                        <input type="radio" id="Mayon" name="Q2" value="0">
+                        <label for="Mayon">Mayon</label>
+                        <input type="radio" id="Taal" name="Q2" value="1">
+                        <label for="Taal">Taal</label>
+                        <input type="radio" id="Pinatubo" name="Q2" value="2">
+                        <label for="Pinatubo">Pinatubo</label>
+                        <input type="radio" id="Bulusan" name="Q2" value="3">
+                        <label for="Bulusan">Bulusan</label>
+                    </h3>
+                    <h2>3.) Who is the national hero of the Philippines? </h2>
+                    <h3>
+                        <input type="radio" id="Emilio Aguinaldo" name="Q3" value="0">
+                        <label for="Emilio Aguinaldo">Emilio Aguinaldo</label>
+                        <input type="radio" id="Andres Bonifacio" name="Q3" value="1">
+                        <label for="Andres Bonifacio">Andres Bonifacio</label>
+                        <input type="radio" id="Jose Rizal" name="Q3" value="2">
+                        <label for="Jose Rizal">Jose Rizal</label>
+                        <input type="radio" id="Antonio Luna" name="Q3" value="3">
+                        <label for="Antonio Luna">Antonio Luna</label>
+                    </h3>
+                    <h2>4.) In what year did the Philippines gain independence from Spanish rule? </h2>
+                    <h3>
+                        <input type="radio" id="1898" name="Q4" value="0">
+                        <label for="1898">1898</label>
+                        <input type="radio" id="1901" name="Q4" value="1">
+                        <label for="1901">1901</label>
+                        <input type="radio" id="1946" name="Q4" value="2">
+                        <label for="1946">1946</label>
+                        <input type="radio" id="1965" name="Q4" value="3">
+                        <label for="1965">1965</label>
+                    </h3>
+                    <h2>5.) What traditional Filipino dish is made from pork, marinated in a mixture of garlic, vinegar,<br> and soy sauce, then pan-fried and served with garlic rice and eggs? </h2>
+                    <h3>    
+                        <input type="radio" id="Adobo" name="Q5" value="0">
+                        <label for="Adobo">Adobo</label>
+                        <input type="radio" id="Sinigang" name="Q5" value="1">
+                        <label for="Sinigang">Sinigang</label>
+                        <input type="radio" id="Lechon" name="Q5" value="2">
+                        <label for="Lechon">Lechon</label>
+                        <input type="radio" id="Kare-Kare" name="Q5" value="3">
+                        <label for="Kare-Kare">Kare-Kare</label>
+                    </h3>   
+                        <br><br>
+                        <label for="Score">Your Score is : <h1 id="DisplayScore"> Score </h1></label>
+                        <input type="submit" id="reveal" class="reveal" value="Validate Answer"/><br><br>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
     <script src="javascript/calculate.js"></script>
+    <script src="javascript/quizgame.js"></script>
 </body>
 </html>
