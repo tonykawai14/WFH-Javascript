@@ -1,0 +1,52 @@
+const itemList = document.getElementById('itemList');
+const itemInput = document.getElementById('itemInput');
+const addItemBtn = document.getElementById('addItemBtn');
+
+const items = [];
+
+const renderItems = () => 
+{
+  itemList.innerHTML = items
+    .map(((item, index) => `
+      <li class="item-row">
+        <div class="item-cell">${item}</div>
+        <div class="item-cell remove-cell">
+          <button class="removeBtn" data-index="${index}">Remove</button>
+        </div>
+      </li>
+    `))
+    .join('');
+};
+
+const addItem = () => 
+{
+  const newItem = itemInput.value.trim();
+  if (newItem !== '') 
+  {
+    items.push(newItem);
+    itemInput.value = '';
+    renderItems();
+    console.log(`Item Added is: ${newItem}`);
+  }
+};
+
+const removeItem = (index) => 
+{
+  const removedItemText = items[index];
+  items.splice(index, 1);
+  renderItems();
+  console.log(`Item Removed is: ${removedItemText}`);
+};
+
+addItemBtn.addEventListener('click', addItem);
+
+itemList.addEventListener('click', (event) => 
+{
+  if (event.target.classList.contains('removeBtn')) 
+  {
+    const index = parseInt(event.target.getAttribute('data-index'));
+    removeItem(index);
+  }
+});
+
+renderItems();
